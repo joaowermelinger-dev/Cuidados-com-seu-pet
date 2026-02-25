@@ -94,6 +94,81 @@ body {
   font-size: 18px;
 }
 
+.section__racas__container {
+    background-color: #81C784;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.section__racas__container h3 {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.section__racas__container h2 {
+    font-size: 1.3rem;
+    padding: 20px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+/* NOVOOOOOOO */
+.lista-racas {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.lista-racas li {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.lista-racas li:hover {
+  transform: translateY(-5px);
+}
+
+.lista-racas strong {
+  display: block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  font-size: 1.5rem;
+  color: #FF6B6B;
+  margin-bottom: 8px;
+}
+
+.lista-racas p {
+  color: #444;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* GALERIA EST */
