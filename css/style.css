@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color:#F1F8E9;
+    background-color: #ffffff;
 }
 
 
@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .header__container h2 {
@@ -47,118 +48,148 @@ body {
 /* FINAL HEADER */
 
 
-.section__conteudo__container  {
-    background-color: azure;
+.section__racas__container h3 {
+  font-size: 3rem;
+}
+
+.container__imagem {
     display: flex;
-    align-items: center;
-    gap: 40px;
-    padding: 40px;
+    justify-content: center; /* centraliza horizontal */
 }
 
-
-.div__img img {
-    width: 70%;
-    border-radius: 3px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.div__ul {
-    display: flex;
-    justify-content: center;
-    margin: 20px 20px;
-    padding: 20px;
-}
-
-.div__ul ul {
-    list-style: none;
-    max-width: 90%;
-}
-
-.div__ul li {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
-}
-
-.div__ul li:hover {
-  transform: translateY(-5px);
-}
-
-.div__ul strong {
-  color: #FF6B6B;
+.container__imagem img {
+  width: 100%;        /* Ocupa toda a largura disponível */
+  height: auto;      /* Ou a altura que você desejar */
   display: block;
-  margin-bottom: 5px;
-  font-size: 18px;
 }
+/* ======================================================================= */
+
 
 .section__racas__container {
-    background-color: #81C784;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
+  background-color: #FFF9F0;
+    width: 100%;
 }
 
-.section__racas__container h3 {
-    font-size: 3rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: #fff;
+.container__informacoes {
+  background-color: #FFF9F0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-.section__racas__container h2 {
-    font-size: 1.3rem;
-    padding: 20px;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+
+.container__informacoes h3 {
+  color: #e64a12;
+  background-color: #ea471133;
+  border-radius: 13px;
+  width: 100%;
+
 }
 
-/* NOVOOOOOOO */
-.lista-racas {
-  list-style: none;
-  margin-top: 40px;
+
+.container__informacoes h2 {
+  font-size: 1.2rem;
+  color: #333333;
+  margin:20px 30px ;
 }
 
 .lista-racas li {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-}
-
-.lista-racas li:hover {
-  transform: translateY(-5px);
+  background-color: #9ccddf5d;
+  padding: 18px;
+  margin: 40px;
+  border-radius: 13px;
 }
 
 .lista-racas strong {
-  display: block;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+  color: #ea4711;
+  font-size: 1.2rem;
+}
+
+
+
+.imagens__container {
+  display: flex;
+}
+
+.imagens__container img {
+  width: 27%;
+}
+
+.lista-racas {
+  list-style: none;
+}
+
+.section__dicas__container {
+  background-color: #9ccddf5d;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__imagem__treino img {
+  width: 40vw;
+  margin: 30px 10px;
+  border-radius: 13px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.conteudo__li__p {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.conteudo__li__p ol {
+  list-style: none;
+  background-color: #9ccddf5d;
+  padding: 35px;
+  border-radius: 13px;
+}
+
+.conteudo__li__p li {
+  padding: 20px;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+}
+
+.conteudo__li__p strong {
   font-size: 1.5rem;
-  color: #FF6B6B;
-  margin-bottom: 8px;
+  color: #e64a12;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+
 }
 
-.lista-racas p {
-  color: #444;
-  line-height: 1.5;
+.section__dicas__container p {
+  
+  font-size: 1.45rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #e64a12;
+  text-align: center;
 }
 
 
 
 
+.container__conteudos__treino {
+  display: flex;
+  justify-content: space-around;
+}
 
-
-
-
-
-
+.section__dicas__container h3{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #e64a12;
+  background-color:#9ccddf85 ;
+  text-align: center;
+}
 
 
 

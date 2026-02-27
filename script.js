@@ -20,3 +20,43 @@ document.getElementById("btn__galeria").addEventListener("click", () => {
         galeria.appendChild(img); // colocando imagens dentro da galeria
     });
 });
+
+//pesquisa
+//para criar listas usamos array []
+
+const listaRacas = [
+    {
+        nome: "Labrador",
+        caracteristica: "Protetor"
+    },
+
+    {
+        nome: "Pastor Alemão",
+        caracteristica: "Corajoso"
+    },
+
+    {
+        nome: "Yorkshire",
+        caracteristica: "Caçador"
+    },
+];
+
+//capturando input
+document.getElementById("campo-filtro").addEventListener("input", (e) => {
+    // o "e" e o elemento digitado/o testo digitado no input
+    const valor = e.target.value.toLowerCase();
+    const resultado = document.getElementById("resultado");
+
+    // informando ao html que ele ira iniciar vazio
+    resultado.innerHTML = "";
+    //  filtrando no array  
+    // o metodo de array filter, ele recebe  array.filter(() =>{})
+    listaRacas.filter((raca) => raca.nome.toLowerCase().includes(valor)).forEach((raca) => {
+        const li = document.createElement("li");
+        li.textContent = `${raca.nome} - ${raca.caracteristica}`;
+        resultado.appendChild(li)
+    })
+
+
+
+})
